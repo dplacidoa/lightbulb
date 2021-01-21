@@ -1,5 +1,5 @@
 ---
-- name: Ensure apache is installed and started
+- name: Ensure apache is installed and started ok
   hosts: web
   become: yes
   vars:
