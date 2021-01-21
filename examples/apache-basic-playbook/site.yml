@@ -12,9 +12,9 @@
   tasks:
     - name: Ensure httpd packages are present
       yum:
-        name: '{{ item }}'
+        name: httpd
         state: present
-      with_items: '{{ httpd_packages }}'
+      #with_items: '{{ httpd_packages }}'
       notify: restart-apache-service
 
     - name: Ensure site-enabled directory is present
